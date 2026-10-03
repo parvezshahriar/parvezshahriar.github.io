@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&amp;family=DM+Serif+Display:ital@0;1&amp;family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="preload" as="image" href="images/illustator.webp" type="image/webp" fetchpriority="high">
 
   <style>
     /* Custom Backgrounds & Gradients */
@@ -913,7 +914,10 @@
             <div class="hero-arc-dot"></div>
           </div>
           <div class="hero-photo">
-            <img src="images/illustator.png" alt="Shahriar Parvez Shaon">
+            <picture>
+              <source srcset="images/illustator.webp" type="image/webp">
+              <img src="images/illustator.png" alt="Shahriar Parvez Shaon" fetchpriority="high" decoding="async">
+            </picture>
           </div>
           <div class="hero-float-card card-fintech">
             <div class="hero-float-title">
@@ -1240,7 +1244,7 @@
           <div class="glass-card rounded-3xl p-6 sm:p-8 relative border-l-4 border-l-brand-cyan"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-800">
   <div class="flex items-center gap-4">
     <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-brand-cyan/20 flex items-center justify-center overflow-hidden">
-      <img src="images/nagad.png" alt="Nagad logo" class="w-full h-full object-contain p-2">
+      <img src="images/nagad.png" alt="Nagad logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
     </div>
     <div>
       <h3 class="text-xl sm:text-2xl font-bold text-white">External Party Solution Intern</h3>
@@ -1284,7 +1288,7 @@
           <div class="glass-card rounded-3xl p-6 sm:p-8 relative border-l-4 border-l-brand-purple"><div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-800">
   <div class="flex items-center gap-4">
     <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-brand-purple/20 flex items-center justify-center overflow-hidden">
-      <img src="images/bdosn.png" alt="Bangladesh Open Source Network logo" class="w-full h-full object-contain p-2">
+      <img src="images/bdosn.png" alt="Bangladesh Open Source Network logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
     </div>
     <div>
       <h3 class="text-xl sm:text-2xl font-bold text-white">Program Executive</h3>
@@ -1333,7 +1337,7 @@
           <!-- Card 1 -->
           <div class="glass-card rounded-2xl p-6 relative">
             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-brand-cyan/20 flex items-center justify-center overflow-hidden mb-4">
-              <img src="images/bdaio.png" alt="Bangladesh Artificial Intelligence Olympiad logo" class="w-full h-full object-contain p-2">
+              <img src="images/bdaio.png" alt="Bangladesh Artificial Intelligence Olympiad logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
             </div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-full bg-brand-cyan/10 text-brand-cyan font-mono text-xs border border-brand-cyan/20">Feb 2025 – Present</span>
@@ -1352,7 +1356,7 @@
           <!-- Card 2 -->
           <div class="glass-card rounded-2xl p-6 relative">
             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-brand-purple/20 flex items-center justify-center overflow-hidden mb-4">
-              <img src="images/BdJSO_logo.png" alt="Bangladesh Junior Science Olympiad logo" class="w-full h-full object-contain p-2">
+              <img src="images/BdJSO_logo.png" alt="Bangladesh Junior Science Olympiad logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
             </div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-full bg-brand-purple/10 text-brand-purple font-mono text-xs border border-brand-purple/20">Aug 2023 – Present</span>
@@ -1371,7 +1375,7 @@
           <!-- Card 3 -->
           <div class="glass-card rounded-2xl p-6 relative">
             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-amber-500/20 flex items-center justify-center overflow-hidden mb-4">
-              <img src="images/scratch.png" alt="Scratch Bangladesh logo" class="w-full h-full object-contain p-2">
+              <img src="images/scratch.png" alt="Scratch Bangladesh logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
             </div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 font-mono text-xs border border-amber-500/20">May 2023 – Present</span>
@@ -1390,7 +1394,7 @@
           <!-- Card 4 -->
           <div class="glass-card rounded-2xl p-6 relative">
             <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-emerald-500/20 flex items-center justify-center overflow-hidden mb-4">
-              <img src="images/Malala fund.PNG" alt="Malala Fund logo" class="w-full h-full object-contain p-2">
+              <img src="images/Malala fund.PNG" alt="Malala Fund logo" class="w-full h-full object-contain p-2" loading="lazy" decoding="async">
             </div>
             <div class="flex items-center justify-between mb-4">
               <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-mono text-xs border border-emerald-500/20">Aug 2023 – Apr 2024</span>
@@ -1709,7 +1713,7 @@
           <!-- Card 1 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(0)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image1.JPG" alt="Robotics Workshop, Cox's Bazar" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image1.JPG" alt="Robotics Workshop, Cox's Bazar" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-brand-cyan/10 border border-brand-cyan/20 flex items-center justify-center text-brand-cyan mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
               </div>
@@ -1722,7 +1726,7 @@
           <!-- Card 2 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(1)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image2.JPG" alt="Python Training Session" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image2.JPG" alt="Python Training Session" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-brand-purple/10 border border-brand-purple/20 flex items-center justify-center text-brand-purple mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
               </div>
@@ -1735,7 +1739,7 @@
           <!-- Card 3 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(2)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image3.jfif" alt="Students Presenting Projects" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image3.jfif" alt="Students Presenting Projects" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
               </div>
@@ -1748,7 +1752,7 @@
           <!-- Card 4 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(3)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image4.png" alt="Scratch Programming for Girls" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image4.jpg" alt="Scratch Programming for Girls" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
               </div>
@@ -1761,7 +1765,7 @@
           <!-- Card 5 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(4)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image5.jpg" alt="Equipment Distribution Day" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image5.jpg" alt="Equipment Distribution Day" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               </div>
@@ -1774,7 +1778,7 @@
           <!-- Card 6 -->
           <div class="glass-card rounded-2xl p-5 cursor-pointer hover:border-brand-cyan transition-all group" onclick="openStory(5)">
             <div class="w-full h-44 rounded-xl bg-slate-800/80 border border-slate-700/60 mb-4 flex flex-col items-center justify-center p-4 text-center relative overflow-hidden group-hover:scale-[1.02] transition-transform">
-              <img src="images/image6.jpg" alt="AI Olympiad Regional Round" class="absolute inset-0 w-full h-full object-cover">
+              <img src="images/image6.jpg" alt="AI Olympiad Regional Round" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
               <div class="w-10 h-10 rounded-full bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
               </div>
@@ -1887,7 +1891,7 @@
       },
       {
         meta: "Malala Fund Initiative · 2023",
-        image: "images/image4.png",
+        image: "images/image4.jpg",
         title: "Scratch Programming for Girls",
         story: "Authored gender-inclusive curricula for young girls in coastal regions vulnerable to socio-economic disruptions. Students created working interactive narratives within three sessions."
       },
