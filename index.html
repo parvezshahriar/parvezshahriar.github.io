@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en" class="scroll-smooth" style=""><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahriar Parvez Shaon — Data Analyst &amp; Data Engineer</title>
+  <title>Shahriar Parvez Shaon — Empowering Digital Transformation</title>
   
   <!-- SEO & Social Meta -->
   <meta name="description" content="Portfolio of Shahriar Parvez Shaon — Data Analyst &amp; Data Engineer specializing in fintech integration, predictive modeling, and scalable ETL pipelines.">
@@ -21,6 +21,17 @@
   
   <link rel="stylesheet" href="styles/index.css">
   <link rel="preload" as="image" href="images/illustator.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Always start at hero section on reload -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    if (window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+    window.scrollTo(0, 0);
+  </script>
 
   <style>
     /* Custom Backgrounds & Gradients */
@@ -753,7 +764,7 @@
             <path d="M3 3v18h18" />
             <path d="M18 9l-5 5-4-4-4 4" />
           </svg>
-          Data Analyst · Data Engineer · Fintech
+          Data Engineer · Fintech
         </p>
         <div class="hero-title-wrapper">
           <h1>Shahriar<br><span class="grad-name">Parvez Shaon</span></h1>
@@ -774,7 +785,7 @@
               <rect x="3" y="5" width="18" height="14" rx="2" />
             </svg>
           </a>
-          <a href="#contact" class="btn-outline">Download Resume
+          <a href="Shahriar_Parvez_Shaon%20.pdf" class="btn-outline" download="Shahriar_Parvez_Shaon.pdf">Download Resume
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M12 3v12" />
               <path d="m7 10 5 5 5-5" />
@@ -856,7 +867,12 @@
                 </svg>
                 Experienced with
               </div>
-              <div class="hero-float-body">Project and Stakeholder Management</div>
+              <div class="hero-float-body">
+                <ul>
+                  <li>Project and Stakeholder Management</li>
+                  <li>Product Management</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1590,7 +1606,7 @@
               <div class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-2">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
               </div>
-              <span class="text-slate-400 text-xs mt-1">N-Risers Internship</span>
+              <span class="text-slate-400 text-xs mt-1">𝐍-𝐑𝐢𝐬𝐞𝐫𝐬 𝐅𝐚𝐥𝐥 𝟐𝟎𝟐𝟓 𝐂𝐥𝐨𝐬𝐢𝐧𝐠 & 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐞 𝐆𝐢𝐯𝐢𝐧𝐠 𝐂𝐞𝐫𝐞𝐦𝐨𝐧𝐲</span>
             </div>
             <h4 class="font-bold text-white text-base group-hover:text-amber-400 transition-colors">Completing Internship at Nagad</h4>
             <p class="text-slate-400 text-xs font-mono mt-1">Dhaka, Bangladesh</p>
@@ -1733,7 +1749,7 @@
       {
         meta: "Nagad Internship Program · 2026",
         image: "images/image3.jfif",
-        title: "Completing Internship at Nagad",
+        title: "𝐍-𝐑𝐢𝐬𝐞𝐫𝐬 𝐅𝐚𝐥𝐥 𝟐𝟎𝟐𝟓 𝐂𝐥𝐨𝐬𝐢𝐧𝐠 & 𝐂𝐞𝐫𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐞 𝐆𝐢𝐯𝐢𝐧𝐠 𝐂𝐞𝐫𝐞𝐦𝐨𝐧𝐲",
         story: "From November 2025 to March 2026, I worked as an External Party Solution Intern (N-Risers) at Nagad, one of Bangladesh's leading fintech companies. I supported government integration projects from the first stakeholder discussions through to deployment. My role was to act as the link between government entities and Nagad's internal teams. I led project kickoffs, aligned stakeholders, assessed technical feasibility, and turned stakeholder needs into clear requirements for the technical teams. I also handled sensitive beneficiary data and worked with the R&D team on prototypes for new integration approaches, while keeping to the organization's security standards. The internship strengthened my skills in stakeholder management, requirements gathering, and solution design."
       },
       {
@@ -1800,6 +1816,15 @@
         mobileDrawer.classList.add('hidden');
         mobileBtn.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Ensure page starts from hero section on reload or bfcache restoration
+    window.addEventListener('pageshow', () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    });
+
+    window.addEventListener('beforeunload', () => {
+      window.scrollTo(0, 0);
     });
   </script>
 
