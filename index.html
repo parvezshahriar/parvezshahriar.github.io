@@ -1702,16 +1702,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-brand-cyan"></span>
-        <span class="">Shahriar Parvez Shaon · Portfolio</span>
+        <span class="">© <span id="current-year"></span> Shahriar Parvez Shaon. All rights reserved.</span>
       </div>
       <div class="">
-        Designed for High Performance, Semantic SEO &amp; Accessibility
-      </div>
-      <div class="">
-        Dhaka, Bangladesh · 2025
+        Dhaka, Bangladesh · <span id="location-year"></span>
       </div>
     </div>
   </footer>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+    document.getElementById('location-year').textContent = currentYear;
+  </script>
 
   <!-- Accessible Story Modal Dialog -->
   <div id="storyModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
